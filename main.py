@@ -9,7 +9,7 @@ from googleapiclient.discovery import build
 
 API_KEY = os.environ.get('API_KEY', '')
 PLAYLIST_ID = os.environ.get('PLAYLIST_ID', '')
-DOWNLOAD_PATH = os.environ.get('DOWNLOAD_PATH', './downloads/')
+DOWNLOAD_PATH = os.environ.get('DOWNLOAD_PATH', '/app/downloads/')
 DEFAULT_FORMAT_ID = os.environ.get('DEFAULT_FORMAT_ID', '22')
 CHECK_INTERVAL = 60 * int(os.environ.get("CHECK_INTERVAL", "30"))
 DEFAULT_EXTENSION = '.mp4'
