@@ -15,9 +15,9 @@ CHECK_INTERVAL = 60 * int(os.environ.get("CHECK_INTERVAL", "30"))
 DEFAULT_EXTENSION = '.mp4'
 
 logging.basicConfig(
-    stream=sys.stdout,
-    format="%(levelname)s %(asctime)s - %(message)s",
-    level=int(os.environ.get("LOG_LEVEL", str(logging.INFO))),
+  stream=sys.stdout,
+  format="%(levelname)s %(asctime)s - %(message)s",
+  level=int(os.environ.get("LOG_LEVEL", str(logging.INFO))),
 )
 
 logger = logging.getLogger()
