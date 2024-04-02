@@ -8,7 +8,6 @@ ADD main.py /app
 
 RUN apk update && apk upgrade && apk add bash curl git
 RUN curl https://pyenv.run | bash
-RUN pip install yt-dlp
 RUN pip install pipenv
 RUN pipenv install
 
